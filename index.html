@@ -1,177 +1,259 @@
+<!-- 
+  Hello 😊.
+
+  This template is designed and developed by Nisar Hassan Naqvi
+  for anyone to use for free or customize the way they like.
+
+  Github Repo: https://github.com/nisarhassan12/portfolio-template/
+  My Website: https://nisar.dev
+
+  For business & inquires, contact me => syednisarhassan12@gmail.com
+-->
+
+<!--
+  Follow the instructions written in comments to create your stunning portfolio
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <script src="https://kit.fontawesome.com/69f5304db6.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
+  <!-- Put your site title here -->
+  <title>
+    Zach Daube
+  </title>
 
-    <title>zachdaube</title>
-
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
 </head>
-
-
 
 <body>
 
-    <div id='stars'></div>
-    <div id='stars2'></div>
-    <div id='stars3'></div>
+  <!-- ***** Header ***** -->
 
-    <div class="TopContactButtons">
-        <a href="https://www.linkedin.com/in/zach-daube-4090ba217" target="_blank"> <span style="color: white;"><i
-                    class="fa-brands fa-linkedin"></i></span></a>
-        <br>
-        <a href="https://github.com/zachdaube" target="_blank"><span style="color: white;">
-                <i class="fa-brands fa-github"></i></span></a>
-        <br>
-        <a href="https://www.instagram.com/zachdaube/?next=%2F" target="_blank"> <span style="color: white;">
-                <i class="fa-brands fa-instagram"></i></span></a>
+  <header class="header" role="banner" id="top">
+    <div class="header__background"></div> <!-- Add this div -->
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Skills</a></li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-
-    <div id="home" class="MainTitle">
-        <h1>Hello, I'm <span style="color:#FEBE10">Zach</span>.<br>I'm a Computer Science student at<br>
-            <span style="color:#FEBE10">Emory University</span>.
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Zach Daube</span>
         </h1>
-
-        <div class="EmoryLogo">
-            <img src="images/EU_shield_hz_rv.png" height="100" fl>
-        </div>
-
-        <div class="HomeNavigationButtons">
-            <button id="homeButton" onclick="scrollToSection('about')">
-                About
-            </button>
-            </button>
-            <button id="homeButton" onclick="scrollToSection('projects')">
-                Projects
-            </button>
-            <button id="homeButton" onclick="scrollToSection('contact')">
-                Contact
-            </button>
-        </div>
+        <!-- Put a small paragraph about yourself -->
+        <p>Sophomore studying Computer Science Emory University.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
     </div>
+  </header>
 
+  <main role="main">
+    <!-- ***** About ***** -->
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              Hey! I'm Zach Daube, a Computer Science rising sophomore at Emory University, fervently delving into both front-end and back-end design. My coding journey is fueled by a strong foundation in Java and Python, and I'm currently expanding my skill set by mastering HTML, CSS, and JavaScript. This blend of languages empowers me to create and innovate with precision and creativity. I am excited to bring my technical skills, relentless curiosity, and boundless energy to every project I tackle. Let's build something great together.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="./documents/JonathanDaubeResume2027.pdf" class="btn" target="_blank" rel="noopener noreferrer">My Resume</a>
+          </div>
 
-    <div class="NavBar">
-        <button id="navButton" onclick="scrollToSection('home')">
-            Home
-        </button>
-        <button id="navButton" onclick="scrollToSection('about')">
-            About
-        </button>
-        <button id="navButton" onclick="scrollToSection('projects')">
-            Projects
-        </button>
-        <button id="navButton" onclick="scrollToSection('contact')">
-            Contact
-        </button>
-    </div>
-
-    <div id="about" class="AboutMe">
-        <div id="AboutTitle">About Me</div>
-        <br>
-        <div class="CompPic">
-            <img src="images/CompositeHeadshot-nobackground.png">
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/zachdaubecomposite.jpg" alt="" style="max-width: 500px; height: auto; border-radius: 10px;" />
+          </div>
         </div>
-        <div id="AboutText">
-            Hey! I'm Zach Daube, a Computer Science rising sophomore at Emory University, fervently delving into both
-            front-end and back-end design. My coding journey is fueled by a strong foundation in Java and Python, and
-            I'm currently expanding my skill set by mastering HTML, CSS, and JavaScript. This blend of languages
-            empowers me to create and innovate with precision and creativity.
+      </div>
+    </section>
+    
+    
+    <!-- ***** Work ***** -->
 
-            Outside of programming, I love engaging with the great outdoors through hiking and biking, pushing my limits
-            at the gym, and catching every thrilling moment of soccer and football games.
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Projects</h2>
+        <div class="work__boxes">
 
-            I am excited to bring my technical skills, relentless curiosity, and boundless energy to every project I
-            tackle. Let's build something great together.
-        </div>
+          <!-- Each div with the work__box class is a project. -->
 
-        <br>
-        <br>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Portfolio Template</h3>
+              <p>
+                A free Open Source Portfolio for anyone to use for free.
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+                <li>Parcel</li>
+              </ul>
 
-        <div class="prgrmLogos">
-            <div class="logoRow">
-                <div class="logo">
-                    <img src="images/HTML5_logo_and_wordmark.svg.png" height="200">
-                </div>
-                <div class="logo">
-                    <img src="images/CSS-Logo.png" height="200">
-                </div>
-                <div class="logo">
-                    <img src="images/JavaScript-Logo.png" height="200">
-                </div>
+              <div class="work__links">
+                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
             </div>
-            <div class="logoRow">
-                <div class="logo">
-                    <img src="images/Python_logo_and_wordmark.svg.png" height="150">
-                </div>
+            <div class="work__image-box">
+              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
             </div>
-            <div class="logoRow">
-                <div class="logo">
-                    <img src="images/Java_programming_language_logo.svg.png" height="250">
-                </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Calculator</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                eius.
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
             </div>
+            <div class="work__image-box">
+              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Notificator</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                eius.
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ***** Clients ***** -->
+
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Skills</h2>
+        <div class="client__logos">
+          <!-- Add logos of the clients or companies you'have worked with. -->
+          <img src="./images/Java_programming_language_logo.svg.png" class="client__logo" alt="Company 2" />
+          <img src="./images/Python_logo_and_wordmark.svg.png" class="client__logo" alt="Company 3" />
+          <img src="./images/HTML5_logo_and_wordmark.svg.png" class="client__logo" alt="Company 1" />
+          <img src="./images/CSS-Logo.png" class="client__logo" alt="Company 1" />
+          <img src="./images/JavaScript-Logo.png" class="client__logo" alt="Company 3" />
+          <img src="./images/reactlogo.png" class="client__logo" alt="Company 1" />
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          I am currently seeking summer internships and opportunities. If you have any questions or would like to get in touch, feel free to email me.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:jdaube@emory.edu" class="btn">jdaube@emory.edu</a>
+      </div>
     </div>
+  </section>
 
+  <!-- ***** Footer ***** -->
 
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/zachdaube" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href=https://www.linkedin.com/in/zach-daube/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
 
-
-
-    <div id="projects" class="Projects">
-        <div id="ProjectTitle">Projects</div>
-        <div>
-            No current projects, other than this website!
-            Stick around for some cool projects coming soon.
-        </div>
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+      </p>
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
     </div>
+  </footer>
 
-
-    <div id="contact" class="Contact">
-        <div class="ContactTitle">Contact</div>
-        <div id="ContactText">
-            <h4>Want to connect? Shoot me an email or message on my LinkedIn or Instagram!</h4>
-        </div>
-
-
-        <div class="ContactButtons">
-            <a href="mailto:jdaube@emory.edu" style="text-decoration: none; color: inherit;">
-                <i class="fa-solid fa-envelope" style="color: white;"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/zach-daube-4090ba217" target="_blank"> <i class="fa-brands fa-linkedin"
-                    style="color: #0059bc;"></i></a>
-            <a href="https://github.com/zachdaube" target="_blank"><i class="fa-brands fa-github" style="color: black"
-                    ;></i></a>
-            <a href=" https://www.instagram.com/zachdaube/?next=%2F" target="_blank"> <i
-                    class="fa-brands fa-instagram"></i></a>
-        </div>
-    </div>
-
-
-    <script>
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        }
-    </script>
-
-
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
 </body>
 
 </html>
